@@ -5,15 +5,20 @@
  * building robust, powerful web applications using Vue and Laravel.
  */
 
-// require('./bootstrap');
-window.$ = window.jQuery = require('jquery');
-// window.Popper = require('popper.js').default; // default is very important.
-// require('bootstrap-material-design');
-// require('bootstrap/dist/js/bootstrap');
+// window.$ = window.jQuery = require('jquery');
+// // window.Popper = require('popper.js').default; // default is very important.
+// // require('bootstrap/dist/js/bootstrap');
 
-import Popper from 'popper.js/dist/umd/popper.js';
-window.Popper = Popper;
+// import Popper from 'popper.js/dist/umd/popper.js';
+// window.Popper = Popper;
 
+require('./bootstrap');
+require('bootstrap-material-design');
+
+
+require('bootstrap-material-design/js/dropdown');
+require('bootstrap-material-design/js/ripples');
+require('bootstrap-material-design/js/util');
 // console.log(Popper);
 
 window.Vue = require('vue');
