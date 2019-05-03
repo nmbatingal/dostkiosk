@@ -1,16 +1,31 @@
 
 // Fonts
 @import url('https://fonts.googleapis.com/css?family=Nunito');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons');
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css');
 
 // Variables
 // @import 'variables';
 
 // Bootstrap
-// @import '~bootstrap/scss/bootstrap';
+// @import "~bootstrap/scss/bootstrap";
 @import '~bootstrap-material-design/scss/bootstrap-material-design';
-@import 'mdkit/mdb';
+// @import 'mdkit/mdb';
+// @import 'material-kit';
 
-// .navbar-laravel {
-  // background-color: #fff;
-  // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
-// }
+// SwiperJs
+@import '~swiper/src/swiper';
+
+body {
+    background: url('/images/bg/white-bg.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    /*** DISABLE TEXT SELECT ***/
+    -webkit-user-select: none;
+    -moz-user-select: -moz-none;
+    -ms-user-select: none;
+    user-select: none;
+}

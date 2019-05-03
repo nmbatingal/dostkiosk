@@ -10,6 +10,9 @@ class User extends Authenticatable
 {
     use Notifiable;
 
+    protected $connection   = 'mysql_account';
+    protected $table        = "users";
+    
     /**
      * The attributes that are mass assignable.
      *

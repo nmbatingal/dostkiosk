@@ -13,8 +13,23 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-   .sass('resources/sass/app.scss', 'public/css');
+   .extract([
+         'vue',
+         'jquery',
+         'swiper',
+         'moment',
+         'bootstrap-datetimepicker-npm',
+         'nouislider',
+     ])
+   .js('resources/js/admin-app.js', 'public/js')
+   .sass('resources/sass/app.scss', 'public/css')
+   .sass('resources/sass/admin-app.scss', 'public/css')
+   .copyDirectory('node_modules/overlayscrollbars', 'public/node_modules/overlayscrollbars');
    // .autoload({
    //      'jquery': ['$', 'window.$', 'jQuery', 'window.jQuery'], //extract into the global variable space
    //      'popper.js': ['Popper', 'window.Popper']
    //  });
+
+if (mix.inProduction()) {
+    mix.version();
+}
