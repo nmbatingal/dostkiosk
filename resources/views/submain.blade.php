@@ -252,21 +252,11 @@
 
         var swiperFront = new Swiper('.swiper-container', {
             slidesPerView: 4,
-            // centeredSlides: true,
             spaceBetween: 30,
             effect: 'slides',
             speed: 5000,
             loop: true,
-            // coverflowEffect: {
-            //     slideShadows: true,
-            // },
-            // autoplay: {
-            //     delay: 5000,
-            //     disableOnInteraction: false,
-            // },
             grabCursor: true,
-            // watchSlidesVisibility: true,
-            // lazy: true
             autoplay: {
                 delay: 5000, 
                 disableOnInteraction: false,
