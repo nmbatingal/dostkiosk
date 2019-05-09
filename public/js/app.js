@@ -36603,7 +36603,8 @@ __webpack_require__(/*! nouislider */ "./node_modules/nouislider/distribute/noui
 
 
 window.Vue = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.common.js");
-window.Swiper = swiper__WEBPACK_IMPORTED_MODULE_0__["default"]; // window.pJS = pJS;
+window.Swiper = swiper__WEBPACK_IMPORTED_MODULE_0__["default"];
+window.moment = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js"); // window.pJS = pJS;
 
 /* particlesJS.load(@dom-id, @path-json, @callback (optional)); */
 // particlesJS.load('particles-js', 'assets/particles.json', function() {
@@ -36633,6 +36634,7 @@ var app = new Vue({
   el: '#app',
   mounted: function mounted() {
     new swiper__WEBPACK_IMPORTED_MODULE_0__["default"]();
+    new moment();
   }
 });
 

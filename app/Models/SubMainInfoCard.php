@@ -21,11 +21,17 @@ class SubMainInfoCard extends Model
         'alt_name',
         'card_description',
         'main_description',
+        'story',
         'image_path',
         'tag',
     ];
 
     public function mainTitleCard()
+    {
+        return $this->belongsTo(MainTitleCard::class, 'main_title_cards_id', 'id');
+    }
+
+    public function SubCards()
     {
         return $this->belongsTo(MainTitleCard::class, 'main_title_cards_id', 'id');
     }

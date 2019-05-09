@@ -23,11 +23,12 @@ require('nouislider');
 // require('bootstrap-material-design/js/util');
 // console.log(Popper);
 
-
 import Swiper from 'swiper';
 
 window.Vue = require('vue');
 window.Swiper = Swiper;
+
+window.moment = require('moment');
 
 // window.pJS = pJS;
 
@@ -63,5 +64,6 @@ const app = new Vue({
     el: '#app',
     mounted() {
         new Swiper();
+        new moment();
     }
 });

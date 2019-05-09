@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- CSRF Token -->
+    <meta name="csrf-token" content="{{ csrf_token() }}">
+
+    <title>{{ config('app.name', 'Laravel') }}</title>
+
+    <!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet" type="text/css">
+
+    <!-- Styles -->
+    <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link href="{{ asset('assets/css/material-kit.css?v=2.0.5') }}" rel="stylesheet">
+    <link href="{{ asset('assets/demo/demo.css') }}" rel="stylesheet">
+
+    <!-- OverlayScrollbars -->
+    <link href="{{ asset('node_modules/overlayscrollbars/css/OverlayScrollbars.css') }}" rel="stylesheet">
+
+    <style type="text/css">
+
+        .navbar-expand-lg:not(.navbar-transparent) .container-fluid {
+            z-index: 2;
+            position: relative;
+            color: #555;
+        }
+
+        .page-header > .container-fluid {
+            z-index: 2;
+            position: relative;
+            color: #ffffff;
+        }
+
+        .nav-pills .nav-link:not(.active) {
+            border: 1px solid rgba(255, 255, 255, .25);
+        }
+
+        .footer {
+            bottom: 0;
+            color: #212529;
+            left: 0px;
+            
+            right: 0;
+            border-top: 1px solid #e9ecef;
+            background: #000000;
+            color: #ffffff;
+        }
+
+        .page-header .carousel .carousel-indicators {
+            bottom: 0;
+        }
+
+        .os-scrollbar-vertical > .os-scrollbar-track > .os-scrollbar-handle {
+            min-width: 100px;
+            max-width: 300px;
+        }
+
+        .card .card-image {
+            color: #ffffff;
+        }
+
+        .rgba-black-strong, .rgba-black-strong:after {
+            background-color: rgba(0,0,0,.7);
+        }
+
+        @font-face {
+            font-family: DigitalClockFont;
+            src: url('{{ asset('fonts/digital/digital-7.ttf') }}');
+        }
+
+        .timer-clock {
+            font-family: 'DigitalClockFont', sans-serif;
+            font-size: 30pt;
+        }
+
+    </style>
+</head>
+<body class="index-page sidebar-collapse">
+    <div id="app">
+        @include('layouts.navbar')
+
+        @yield('content')
+
+        @include('layouts.footer')
+    </div>
+
+    <!-- Scripts -->
+    <script src="{{ asset('js/manifest.js') }}"></script>
+    <script src="{{ asset('js/vendor.js') }}"></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+
+    <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
+    <script src="{{ asset('assets/js/material-kit.js?v=2.0.5') }}" type="text/javascript"></script>
+
+    @stack('scripts')
+</body>
+</html>

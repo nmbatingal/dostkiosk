@@ -15,7 +15,11 @@ class CreateChildrenCardsTable extends Migration
     {
         Schema::create('children_cards', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('sub_card_id')->unsigned();
+            $table->text('story')->nullable();
             $table->timestamps();
+
+            $table->foreign('sub_card_id')->references('id')->on('sub_main_info_cards')->onDelete('cascade');
         });
     }
 
