@@ -2,6 +2,7 @@
 
 use App\Models\SubMainInfoCard;
 
+use Illuminate\Support\Facades\Storage;
 use Illuminate\Http\Request;
 
 /*
@@ -22,8 +23,62 @@ Route::get('/health', function () { return view('health'); })->name('health');
 Route::get('/academe', function () { return view('academe'); })->name('academe');
 
 
-// DRRM SUBMAIN MENU ROUTES
-Route::get('drrm/asti', function () { return view('drrm.child.asti'); })->name('drrm.asti');
+// ASTI SUBMAIN MENU ROUTES
+Route::get('drrm/asti', function () { 
+	$photos = Storage::disk('public')->allFiles('gallery/drrm/asti/images');
+	$videos_sort = Storage::disk('public')->files('gallery/drrm/asti/video');
+	$videos_unique = array_unique(str_replace(['.mp4', '.png'], '', $videos_sort));
+	return view('drrm.child.asti', compact('photos', 'videos_unique'));
+})->name('drrm.asti');
+
+// DEWS SUBMAIN MENU ROUTES
+Route::get('drrm/dews', function () { 
+	$photos = Storage::disk('public')->allFiles('gallery/drrm/dews/images');
+	$videos_sort = Storage::disk('public')->files('gallery/drrm/dews/video');
+	$videos_unique = array_unique(str_replace(['.mp4', '.png'], '', $videos_sort));
+	return view('drrm.child.dews', compact('photos', 'videos_unique'));
+})->name('drrm.dews');
+
+// ECOSEP SUBMAIN MENU ROUTES
+Route::get('drrm/ecosep', function () { 
+	$photos = Storage::disk('public')->allFiles('gallery/drrm/ecosep/images');
+	$brochures = Storage::disk('public')->allFiles('gallery/drrm/ecosep/brochure');
+	$videos_sort = Storage::disk('public')->files('gallery/drrm/ecosep/video');
+	$videos_unique = array_unique(str_replace(['.mp4', '.png'], '', $videos_sort));
+	return view('drrm.child.ecosep', compact('photos', 'brochures', 'videos_unique'));
+})->name('drrm.ecosep');
+
+// GEOSAFER SUBMAIN MENU ROUTES
+Route::get('drrm/geosafer', function () { 
+	$photos = Storage::disk('public')->allFiles('gallery/drrm/geosafer/images');
+	$videos_sort = Storage::disk('public')->files('gallery/drrm/geosafer/video');
+	$videos_unique = array_unique(str_replace(['.mp4', '.png'], '', $videos_sort));
+	return view('drrm.child.geosafer', compact('photos', 'videos_unique'));
+})->name('drrm.geosafer');
+
+// PAGASA SUBMAIN MENU ROUTES
+Route::get('drrm/pagasa', function () { 
+	$photos = Storage::disk('public')->allFiles('gallery/drrm/pagasa/images');
+	$videos_sort = Storage::disk('public')->files('gallery/drrm/pagasa/video');
+	$videos_unique = array_unique(str_replace(['.mp4', '.png'], '', $videos_sort));
+	return view('drrm.child.pagasa', compact('photos', 'videos_unique'));
+})->name('drrm.pagasa');
+
+// PHIVOLCS SUBMAIN MENU ROUTES
+Route::get('drrm/phivolcs', function () { 
+	$photos = Storage::disk('public')->allFiles('gallery/drrm/phivolcs/images');
+	$videos_sort = Storage::disk('public')->files('gallery/drrm/phivolcs/video');
+	$videos_unique = array_unique(str_replace(['.mp4', '.png'], '', $videos_sort));
+	return view('drrm.child.phivolcs', compact('photos', 'videos_unique'));
+})->name('drrm.phivolcs');
+
+// STORRM SUBMAIN MENU ROUTES
+Route::get('drrm/storrm', function () { 
+	$photos = Storage::disk('public')->allFiles('gallery/drrm/storrm/images');
+	$videos_sort = Storage::disk('public')->files('gallery/drrm/storrm/video');
+	$videos_unique = array_unique(str_replace(['.mp4', '.png'], '', $videos_sort));
+	return view('drrm.child.storrm', compact('photos', 'videos_unique'));
+})->name('drrm.storrm');
 
 
 Route::get('/survey', function () { return view('survey'); })->name('survey');
@@ -36,17 +91,6 @@ Route::get('/video', function () {
 Route::get('/welcome', function () {
     return view('welcome');
 });
-
-/***
- * DRRM CARD
- *
- ***/
-Route::get('drrm-and-environment/dews', function ()     { return view('drrm.dews');         })->name('drrm.dews');
-Route::get('drrm-and-environment/ecosep', function ()   { return view('drrm.ecosep');       })->name('drrm.ecosep');
-Route::get('drrm-and-environment/geosafer', function () { return view('drrm.geosafer');     })->name('drrm.geosafer');
-Route::get('drrm-and-environment/pagasa', function ()   { return view('drrm.pagasa');       })->name('drrm.pagasa');
-Route::get('drrm-and-environment/phivolcs', function () { return view('drrm.phivolcs');     })->name('drrm.phivolcs');
-Route::get('drrm-and-environment/storrm', function ()   { return view('drrm.storrm');       })->name('drrm.storrm');
 
 /***
  * COMMUNITY AND MSMEs CARD

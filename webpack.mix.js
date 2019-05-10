@@ -26,7 +26,8 @@ mix.js('resources/js/app.js', 'public/js')
    .sass('resources/sass/admin-app.scss', 'public/css')
    .copyDirectory('node_modules/overlayscrollbars', 'public/node_modules/overlayscrollbars')
    .copyDirectory('node_modules/mediaelement', 'public/node_modules/mediaelement')
-   .copyDirectory('node_modules/sticky-kit', 'public/node_modules/sticky-kit');
+   .copyDirectory('node_modules/sticky-kit', 'public/node_modules/sticky-kit')
+   .copyDirectory('node_modules/lightgallery', 'public/node_modules/lightgallery');
    // .autoload({
    //      'jquery': ['$', 'window.$', 'jQuery', 'window.jQuery'], //extract into the global variable space
    //      'popper.js': ['Popper', 'window.Popper']

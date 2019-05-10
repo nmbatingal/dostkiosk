@@ -22,6 +22,8 @@
     <link href="{{ asset('node_modules/overlayscrollbars/css/OverlayScrollbars.css') }}" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('node_modules/mediaelement/mediaelementplayer.min.css') }}">
     <link rel="stylesheet" href="{{ asset('node_modules/mediaelement/plugins/dist/playlist/playlist.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/lightgallery/dist/css/lightgallery.css') }}">
+    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
 
     <style type="text/css">
 
@@ -100,15 +102,24 @@
     <script src="{{ asset('assets/js/material-kit.js?v=2.0.5') }}" type="text/javascript"></script>
     <script src="{{ asset('node_modules/mediaelement/mediaelement-and-player.min.js') }}"></script>
     <script src="{{ asset('node_modules/mediaelement/plugins/dist/playlist/playlist.js') }}"></script>
- <!--    <script src="{{ asset('node_modules/mediaelement/plugins/dist/preview/preview.js') }}"></script> -->
+    <!-- <script src="{{ asset('node_modules/mediaelement/plugins/dist/preview/preview.js') }}"></script> -->
 
     <!-- Sticky Kit -->
     <script src="{{ asset('node_modules/sticky-kit-master/dist/sticky-kit.min.js') }}" type="text/javascript"></script>
 
+    <!-- Lightgallery JS -->
+    <script src="{{ asset('node_modules/lightgallery/dist/js/lightgallery.min.js') }}" type="text/javascript"></script>
+    <!-- Lightgallery JS Plugins -->
+    <script src="{{ asset('node_modules/lightgallery/modules/lg-thumbnail.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('node_modules/lightgallery/modules/lg-fullscreen.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('node_modules/lightgallery/modules/lg-video.min.js') }}" type="text/javascript"></script>
+    <script src="{{ asset('node_modules/lightgallery/modules/lg-zoom.min.js') }}" type="text/javascript"></script>
+    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
+
     @stack('scripts')
 
     <script>
-        $('video').mediaelementplayer();
+        $('#video-player').mediaelementplayer();
     </script>
 </body>
 </html>
