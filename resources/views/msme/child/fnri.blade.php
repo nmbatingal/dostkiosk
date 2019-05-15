@@ -47,15 +47,11 @@
         <div class="container-fluid pt-5">
             <div class="row">
                 <div class="col-md-3 ml-auto">
-                    <h1 class="page-header-title title">Philippine Atmospheric, Geophysical and Astronomical Services Administration</h1>
-                    <h3 class="page-header-title title">PAGASA</h3>
+                    <h1 class="page-header-title title">Department of Science and Technology-Food and Nutrition Research Institute</h1>
+                    <h3 class="page-header-title title">DOST-FNRI</h3>
                     <img
                         class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/DOST ASTI Website QR Code.png') }}" 
-                        width="120" >
-                    <img
-                        class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/PHL Microsat Program Website QR Code.png') }}" 
+                        src="{{ asset('storage/gallery/msme/fnri/FNRI Website QR Code.png') }}" 
                         width="120" >
                 </div>
                 <div class="col-md-8 mr-auto ">
@@ -67,10 +63,10 @@
                                        controls 
                                        preload="auto"
                                        data-cast-title="#DOST"
-                                       poster="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
-                                       style="width: 100%;">
+                                       poster="{{ asset('storage/gallery/msme/fnri/video/iFNRI.png') }}"
+                                       style="height: 100%;">
 
-                                    <source src="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
+                                    <source src="{{ asset('storage/gallery/msme/fnri/video/iFNRI.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/msme/fnri/video/iFNRI.png') }}"
                                             title="#DOST" data-playlist-description="" type="video/mp4">
                                 </video>
                             </div>
@@ -87,9 +83,9 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center p-0" style="margin-top: -50px;">
-                        <div class="alert alert-warning">
+                        <div class="alert alert-success">
                             <div class="container">
-                                <h2 class="title text-white">Department of Science and Technology-Advance Science and Technology Institute</h2>
+                                <h2 class="title text-white">Department of Science and Technology-Food and Nutrition Research Institute</h2>
                             </div>
                         </div>
                     </div>
@@ -127,20 +123,19 @@
                             <div class="tab-pane active show" id="info-2">
                                 <div class="row">
                                     <div class="col-md-9 ml-auto mr-auto">
-                                        <h3 class="title">About ASTI</h3>
+                                        <h3 class="title">About DOST-FNRI</h3>
 
-                                        <img class="pl-3" src="{{ asset('storage/gallery/drrm/asti/ASTI-Advanced Science and Technology Institute logo.png') }}" width="150" >
+                                        <img class="pl-3" src="{{ asset('storage/gallery/msme/fnri/FNRI logo.png') }}" width="150" >
 
-                                        <h3>The Advanced Science and Technology Institute (DOST-ASTI) leads the government’s research and development initiatives in information, communications and technology (ICT), and microelectronics. They are tasked to lead the PHL-MICROSAT Program: Development of Philippine Scientific Earth Observation Microsatellite. Heard of the launch of the first PH cube satellite, MAYA-1? How about the DIWATA-2 Microsatellite? Browse ASTI materials here or visit their booth for the replicas of the satellites. Yet. ASTI brought with them the replicas of MAYA-1 and DIWATA-2! Isn’t that amazing?</h3>
+                                        <h3>The <b>Food and Nutrition Research Institute (FNRI)</b>, of the Department of Science and Technology (DOST), is the principal research arm of the Philippine government in food and nutrition.</h3>
+                                        
+                                        <h3>The FNRI has the mandate to develop nutritious, safe and affordable food products and transfer this technology to entrepreneur for their commercial production and distribution. From this mandate stems FNRI's Program on the Nationwide Technology Transfer and Commercialization of Food Technologies. This Program is geared towards improving the nutritional health of the Filipino population and at the same time providing economic opportunities to entrepreneurs.</h3>
+                                        
+                                        <h3>Learn about the <b class="font-bold">Philippine Food Composition Tables</b>, the technology on <b class="font-bold">Iron Rice Premix and Iron Fortified Rice</b>, and how to prepare a <b class="font-bold">Pinggang Pinoy</b> for kids, teens, pregnant and lactating women, adults, and elderly. Do you need nutritious product ideas? Try <b class="font-bold">ready-to-drink carrot mango, mango with nata</b> and many more. Learn here.</h3>
 
                                         <br>
-
-                                        <iframe src="https://asti.dost.gov.ph#pg-22-2" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
-
-                                        <br>
-
-                                        <h3 class="title">PHL Microsat</h3>
-                                        <iframe src="http://phl-microsat.upd.edu.ph/about" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3 class="title">More on DOST-FNRI</h3>
+                                        <iframe src="https://www.fnri.dost.gov.ph/index.php/programs-and-projects/news-and-announcement#center" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +209,7 @@
             </div>
         </div>
 
-        @include('drrm.drrm-cards')
+        @include('msme.msme-cards')
     </div>
 @endsection
 

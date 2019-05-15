@@ -135,6 +135,11 @@
                                         <h3>The Philippine Atmospheric, Geophysical and Astronomical Services Administration or PAGASA, which also is a tagalog word that means “Hope”, is a DOST agency mandated to weather forecasts and tropical cyclone warnings, flood bulletins and advisories, hydrological, climatological and farm weather forecasts. Beyond that, PAGASA provides information for the protection against natural calamities, ensures the safety, well-being and economic security of all the people.</h3>
 
                                         <h3>Browse here some PAGASA information, communication and education materials on things you need to know about typhoon, El Niño, flood, and La Niña. Make sure you and your family are safe always.</h3>
+
+                                        <br>
+                                        <h3 class="title">More on DOST-PAGASA</h3>
+                                        <iframe src="http://bagong.pagasa.dost.gov.ph/" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+
                                     </div>
                                 </div>
                             </div>

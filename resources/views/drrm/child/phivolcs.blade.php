@@ -127,6 +127,11 @@
                                         <h3>The Philippine Institute of Volcanology and Seismology (PHIVOLCS) is a service institute of the Department of Science and Technology (DOST) that is mandated to mitigate the impact of volcanic eruptions, earthquakes, tsunami and other related geo-tectonic phenomena.</h3>
 
                                         <h3>Know more about PHIVOLCS, how to make your house safe, and the to-do’s before, during and after disasters here. Check out here if your house is located near an active fault using the Faultfinder developed by Philippine Institute of Volcanology and Seismology (PHIVOLCS).</h3>
+
+                                        <br>
+                                        <h3 class="title">More on DOST-PHIVOLCS</h3>
+                                        <iframe src="https://www.phivolcs.dost.gov.ph/index.php/about-us/about-phivolcs#center" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+
                                     </div>
                                 </div>
                             </div>

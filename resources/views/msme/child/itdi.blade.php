@@ -47,15 +47,11 @@
         <div class="container-fluid pt-5">
             <div class="row">
                 <div class="col-md-3 ml-auto">
-                    <h1 class="page-header-title title">Philippine Atmospheric, Geophysical and Astronomical Services Administration</h1>
-                    <h3 class="page-header-title title">PAGASA</h3>
+                    <h1 class="page-header-title title">Department of Science and Technology-Industrial Technology Development Institute</h1>
+                    <h3 class="page-header-title title">DOST-ITDI</h3>
                     <img
                         class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/DOST ASTI Website QR Code.png') }}" 
-                        width="120" >
-                    <img
-                        class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/PHL Microsat Program Website QR Code.png') }}" 
+                        src="{{ asset('storage/gallery/msme/itdi/ITDI Website QR Code.png') }}" 
                         width="120" >
                 </div>
                 <div class="col-md-8 mr-auto ">
@@ -67,10 +63,10 @@
                                        controls 
                                        preload="auto"
                                        data-cast-title="#DOST"
-                                       poster="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
-                                       style="width: 100%;">
+                                       poster="{{ asset('storage/gallery/msme/itdi/video/ITDI-DOST TECHNOLOGY OFFERING Featuring ADVANCED TECHNOLOGIES.png') }}"
+                                       style="height: 100%;">
 
-                                    <source src="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
+                                    <source src="{{ asset('storage/gallery/msme/itdi/video/ITDI-DOST TECHNOLOGY OFFERING Featuring ADVANCED TECHNOLOGIES.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/msme/itdi/video/ITDI-DOST TECHNOLOGY OFFERING Featuring ADVANCED TECHNOLOGIES.png') }}"
                                             title="#DOST" data-playlist-description="" type="video/mp4">
                                 </video>
                             </div>
@@ -87,9 +83,9 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center p-0" style="margin-top: -50px;">
-                        <div class="alert alert-warning">
+                        <div class="alert alert-success">
                             <div class="container">
-                                <h2 class="title text-white">Department of Science and Technology-Advance Science and Technology Institute</h2>
+                                <h2 class="title text-white">Department of Science and Technology-Industrial Technology Development Institute</h2>
                             </div>
                         </div>
                     </div>
@@ -127,20 +123,15 @@
                             <div class="tab-pane active show" id="info-2">
                                 <div class="row">
                                     <div class="col-md-9 ml-auto mr-auto">
-                                        <h3 class="title">About ASTI</h3>
+                                        <h3 class="title">About DOST-ITDI</h3>
 
-                                        <img class="pl-3" src="{{ asset('storage/gallery/drrm/asti/ASTI-Advanced Science and Technology Institute logo.png') }}" width="150" >
+                                        <img class="pl-3" src="{{ asset('storage/gallery/msme/itdi/ITDI Logo.png') }}" width="150" >
 
-                                        <h3>The Advanced Science and Technology Institute (DOST-ASTI) leads the government’s research and development initiatives in information, communications and technology (ICT), and microelectronics. They are tasked to lead the PHL-MICROSAT Program: Development of Philippine Scientific Earth Observation Microsatellite. Heard of the launch of the first PH cube satellite, MAYA-1? How about the DIWATA-2 Microsatellite? Browse ASTI materials here or visit their booth for the replicas of the satellites. Yet. ASTI brought with them the replicas of MAYA-1 and DIWATA-2! Isn’t that amazing?</h3>
-
-                                        <br>
-
-                                        <iframe src="https://asti.dost.gov.ph#pg-22-2" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3>Want new product ideas? Watch the how-to videos of research-based products developed by ITDI like Calamansi concentrate, Charcoal briquettes, Herbal Guyabano, and more. ITDI features the technology behind disaster-resilient and ready-to-eat foods like arroz caldo, smoked fish rice meal, Cassava in light syrup, Boiled Sweet Potato, and Monay. Learn more about the Food Innovation Centers nationwide and their featured technologies like the Vacuum Fryer, Water Retort, and Cabinet Dryer.</h3>
 
                                         <br>
-
-                                        <h3 class="title">PHL Microsat</h3>
-                                        <iframe src="http://phl-microsat.upd.edu.ph/about" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3 class="title">More on DOST-ITDI</h3>
+                                        <iframe src="http://www.itdi.dost.gov.ph/" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +205,7 @@
             </div>
         </div>
 
-        @include('drrm.drrm-cards')
+        @include('msme.msme-cards')
     </div>
 @endsection
 

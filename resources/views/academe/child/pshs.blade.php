@@ -47,16 +47,8 @@
         <div class="container-fluid pt-5">
             <div class="row">
                 <div class="col-md-3 ml-auto">
-                    <h1 class="page-header-title title">Philippine Atmospheric, Geophysical and Astronomical Services Administration</h1>
-                    <h3 class="page-header-title title">PAGASA</h3>
-                    <img
-                        class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/DOST ASTI Website QR Code.png') }}" 
-                        width="120" >
-                    <img
-                        class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/PHL Microsat Program Website QR Code.png') }}" 
-                        width="120" >
+                    <h1 class="page-header-title title">Department of Science and Technology-Philippine Science High School</h1>
+                    <h3 class="page-header-title title">DOST-PSHS</h3>
                 </div>
                 <div class="col-md-8 mr-auto ">
                     <div class="row">
@@ -67,10 +59,10 @@
                                        controls 
                                        preload="auto"
                                        data-cast-title="#DOST"
-                                       poster="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
-                                       style="width: 100%;">
+                                       poster="{{ asset('storage/gallery/academe/pshs/video/DOSTv Episode 492 - Sinesiyensya, Pisay.png') }}"
+                                       style="height: 100%;">
 
-                                    <source src="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
+                                    <source src="{{ asset('storage/gallery/academe/pshs/video/DOSTv Episode 492 - Sinesiyensya, Pisay.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/academe/pshs/video/DOSTv Episode 492 - Sinesiyensya, Pisay.png') }}"
                                             title="#DOST" data-playlist-description="" type="video/mp4">
                                 </video>
                             </div>
@@ -87,9 +79,9 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center p-0" style="margin-top: -50px;">
-                        <div class="alert alert-warning">
+                        <div class="alert alert-info">
                             <div class="container">
-                                <h2 class="title text-white">Department of Science and Technology-Advance Science and Technology Institute</h2>
+                                <h2 class="title text-white">Department of Science and Technology-Philippine Science High School</h2>
                             </div>
                         </div>
                     </div>
@@ -127,20 +119,20 @@
                             <div class="tab-pane active show" id="info-2">
                                 <div class="row">
                                     <div class="col-md-9 ml-auto mr-auto">
-                                        <h3 class="title">About ASTI</h3>
+                                        <h3 class="title">About DOST-PSHS</h3>
 
-                                        <img class="pl-3" src="{{ asset('storage/gallery/drrm/asti/ASTI-Advanced Science and Technology Institute logo.png') }}" width="150" >
+                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/pisay/PSHS Logo.png') }}" width="250" >
 
-                                        <h3>The Advanced Science and Technology Institute (DOST-ASTI) leads the government’s research and development initiatives in information, communications and technology (ICT), and microelectronics. They are tasked to lead the PHL-MICROSAT Program: Development of Philippine Scientific Earth Observation Microsatellite. Heard of the launch of the first PH cube satellite, MAYA-1? How about the DIWATA-2 Microsatellite? Browse ASTI materials here or visit their booth for the replicas of the satellites. Yet. ASTI brought with them the replicas of MAYA-1 and DIWATA-2! Isn’t that amazing?</h3>
+                                        <h3>The Philippine Science High School – Caraga Regional Campus (PSHS-CRC) is one of the 16 Campuses of the Philippine Science High School System which provides scholarships to high school students with high aptitude in Science and Mathematics. Students enrolled in the Philippine Science High School are trained for careers in Science, Engineering and Technology to contribute to nation building by helping the country attain a critical mass of professionals and leaders in Science and Technology.</h3>
+
+                                        <h3>Students enrolled in the high school system do not only perform academically but are also well-trained in the culture of research and leadership, making them competitive in the international scene. In 2017, four students were sent as country representatives to the High Scope Program (HSP) and Nano-technology Informal Education Project (ENIEP) Fair and Exhibition at Taipei, Taiwan on July 10-16, 2017.</h3>
+
+                                        <h3>Pisci Caraga was also among the campuses who participated the Rits Super Global Forum 2017 in Ritsumeikan High School, Nagaokakyo, Kyoto, Japan with the aim of dealing with social issues through conferences, joint workshops, examination and exhibitions by participating schools coming from ten different countries. Two representatives from PiSci Caraga discussed about refugees of the Marawi Siege of Mindanao.</h3>
 
                                         <br>
-
-                                        <iframe src="https://asti.dost.gov.ph#pg-22-2" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
-
-                                        <br>
-
-                                        <h3 class="title">PHL Microsat</h3>
-                                        <iframe src="http://phl-microsat.upd.edu.ph/about" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3 class="title">Learn here on how to be a Pisay scholar.</h3>
+                                        <iframe src="http://www.pshs.edu.ph#content" id="target-div" frameborder="0" width="100%" height="680px"></iframe>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +206,7 @@
             </div>
         </div>
 
-        @include('drrm.drrm-cards')
+        @include('academe.academe-cards')
     </div>
 @endsection
 

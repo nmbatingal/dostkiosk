@@ -6,8 +6,8 @@
             <div class="container-fluid" style="margin-top: 100px;">
                 <div class="row">
                     <div class="col-md-5">
-                        <h1 class="page-header-title title">Science and Technology Innovations for DRRM and Environment</h1>
-                        <h4>The Department of Science and Technology’s commitment to Disaster Risk Reduction and Management (DRRM) is unswerving. We utilize science and technology for disaster risk reduction and protection of life, property, and the environment.</h4>
+                        <h1 class="page-header-title title">Science and Technology Innovations for Community and MSMEs</h1>
+                        <h4>The Department of Science and Technology features the technology interventions for MSMEs under the <b class="font-bold">Small Enterprise Technology Upgrading Program or SETUP</b>. Watch the success stories of our best SETUP Adoptors in Caraga. Check out also the best technologies adopted by MSMEs nationwide. Know how to avail of SETUP here.</h4>
                     </div>
                 </div>
             </div>
@@ -20,9 +20,9 @@
                         <div class="col-md-12">
                             <div class="row">
                                 <div class="col-md-12 text-center p-0" style="margin-top: -50px;">
-                                    <div class="alert alert-warning">
+                                    <div class="alert alert-success">
                                         <div class="container">
-                                            <h2 class="title text-white">What's on STI for DRRM and Environment?</h2>
+                                            <h2 class="title text-white">What's on STI for Community and MSMEs?</h2>
                                         </div>
                                     </div>
                                 </div>
@@ -45,19 +45,19 @@
 
                                                     <div class="carousel-inner">
                                                         <div class="carousel-item active">
-                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/drrm/ASTI Cover Photo.png') }}" alt="First slide">
+                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/msme/msme-01.JPG') }}" alt="First slide">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/drrm/DEWS Cover Photo.jpg') }}" alt="Second slide">
+                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/msme/msme-02.JPG') }}" alt="Second slide">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/drrm/drrm-02.jpg') }}" alt="Third slide">
+                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/msme/msme-03.JPG') }}" alt="Third slide">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/drrm/PAGASA Cover Photo.jpg') }}" alt="Fourth slide">
+                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/msme/msme-04.JPG') }}" alt="Fourth slide">
                                                         </div>
                                                         <div class="carousel-item">
-                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/drrm/PHIVOLCS Cover Photo.jpg') }}" alt="Fifth slide">
+                                                            <img class="d-block w-100" src="{{ asset('storage/gallery/msme/msme-05.JPG') }}" alt="Fifth slide">
                                                         </div>
                                                     </div>
                                                     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -74,16 +74,17 @@
                                         </div>
                                     </div>
 
-                                    <h3>We feature here the <b class="font-bold">Eco-friendly Septic Tank (Eco-Sep) Technology</b> which DOST Caraga piloted in Siargao Island to help address the treatment of sewerage and/or wastewater from households, resorts, hotels, and public establishments.</h3>
+                                    <h3>Check out the following DOST technologies and services that can be helpful to you, the communities, and the micro, small and medium enterprises (MSMEs).</h3>
 
-                                    <h3>Check out here the <b class="font-bold">Science and Technology Operationalized Risk Reduction and Management (Project STORRM)</b> and the establishment of STORRM Centers in the Provincial, Municipal and City Disaster Risk Reduction and Management Offices in Caraga Region.</h3>
+	                                <h3>The Department of Science and Technology features the technology interventions for MSMEs under the <b class="font-bold">Small Enterprise Technology Upgrading Program or SETUP</b>. Watch the success stories of our best SETUP Adoptors in Caraga. Check out also the best technologies adopted by MSMEs nationwide. Know how to avail of SETUP here.</h3>
 
-                                    <h3>Learn here about <b class="font-bold">Advanced Science and Technology Institute (DOST-ASTI)’s</b> project on the Deployment of <b class="font-bold">Early Warning System (DEWS)</b>. The exhibit features the <b class="font-bold">Automated Rain Gauges (ARG)</b> and the <b class="font-bold">Automated Water Level Monitoring System (AWLMS)</b>. Do you know about the Philippine’s microsatellite and cube satellite developed by DOST-ASTI? Visit their booth and learn about our satellites in the space and prepare to be amazed!</h3>
+	                                <h3>The <b class="font-bold">Community Empowerment thru Science and Technology or CEST</b> gives opportunities to poverty stricken communities to uplift their way of life in terms of disaster risk reduction and management, climate change adaptation, education, health and nutrition, water and sanitation, and livelihood. Hear the stories of our assisted communities and watch how water hyacinth slippers and handicrafts are done by the Jabonga Women’s Association.</h3>
 
-                                    <h3>Check out here if your house is located near an active fault using the <b class="font-bold">Faultfinder</b> developed by <b class="font-bold">Philippine Institute of Volcanology and Seismology (PHIVOLCS)</b>. Get some tips here on things to do before, during and after disasters.</h3>
+
+	                                <h3>Need technical advice from experts? DOST features experts and consultants from <b class="font-bold">One Expert and Consultancy program</b> that help individuals and industries step up their research and business operations. Avail of DOST trainings and fora for metals and engineering, furniture and handicrafts, agriculture and aquatic resources, and food safety.</h3>
+
+	                                <h3>We are also joined by DOST <b class="font-bold">research and development institutes (RDIs)</b> from Manila and Los Baños-the Industrial Technology Development Institute (DOST-ITDI), Food and Nutrition Research Institute (DOST-FNRI), Metals Industry Research Development Council (DOST-MIRDC), Forest Products Research and Development Institute (DOST-FPRDI), and the Philippine Council for Agriculture, Aquatic and Natural Resources Research and Development (DOST-PCAARRD). Watch and read about the featured technologies here.</h3>
                                 
-                                    
-
                                 </div>
                             </div>
                         </div>
@@ -91,7 +92,7 @@
                 </div>
             </div>
 
-            @include('drrm.drrm-cards')
+            @include('msme.msme-cards')
         </div>
 
 @endsection

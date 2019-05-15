@@ -18,6 +18,25 @@
     <link href="{{ asset('assets/css/material-kit.css?v=2.0.5') }}" rel="stylesheet">
     <link href="{{ asset('assets/demo/demo.css') }}" rel="stylesheet">
 
+    <link rel="stylesheet" href="{{ asset('node_modules/mediaelement/mediaelementplayer.min.css') }}">
+    <link rel="stylesheet" href="{{ asset('node_modules/mediaelement/plugins/dist/playlist/playlist.css') }}">
+
+    <script>
+        function updateClock()
+        {
+            var currentTimeString = moment().format('LTS');
+
+            $(".timer").html(currentTimeString);
+        }
+
+        function updateDate()
+        {
+            var currentTimeString = moment().format('dddd, MMM D, YYYY');
+
+            $(".timer-date").html(currentTimeString);
+        }
+    </script>
+
     <style type="text/css">
 
         .header-swipers {
@@ -87,10 +106,60 @@
             font-family: 'DigitalClockFont', sans-serif;
             font-size: 30pt;
         }
+
+        .modal-xl {
+            max-width: 1330px;
+        }
     </style>
 </head>
 <body class="index-page sidebar-collapse">
     <div id="app">
+
+        <div class="section p-2">
+            <div class="col text-right ml-auto">
+                <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-play"></i> Watch Video</button>
+                <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Customer Survey</button>
+            </div>
+        </div>
+
+        <!-- Classic Modal -->
+        <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+            <div class="modal-dialog modal-xl" role="document">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12 text-center">
+                                <div class="wrapper">
+                                    <video 
+                                        id="player2"
+                                        controls 
+                                        preload="auto"
+                                        data-cast-title="DOST-ASTI"
+                                        poster="{{ asset('storage/videos/dost-intro-2018.png') }}"
+                                        style="width: 100%;">
+
+                                        <source 
+                                            src="{{ asset('storage/videos/dost-intro-2018.mp4') }}" 
+                                            data-playlist-thumbnail="{{ asset('storage/videos/dost-intro-2018.png') }}"
+                                            title="DOST-ASTI"
+                                            data-playlist-description="" 
+                                            type="video/mp4">
+
+                                        <source 
+                                            src="{{ asset('storage/videos/dost-intro-2018.mp4') }}" 
+                                            data-playlist-thumbnail="{{ asset('storage/videos/dost-intro-2018.png') }}"
+                                            title="DOST-ASTI"
+                                            data-playlist-description="" 
+                                            type="video/mp4">
+                                    </video>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--  End Modal -->
 
         <div class="section">
             <div class="header-swipers">
@@ -148,7 +217,7 @@
                                     <div class="swiper-slide">
                                         <div class="row">
                                             <div class="col-md-12 text-center">
-                                                <a href="{{ url('/drrm') }}">
+                                                <a href="{{ route('drrm.index') }}">
                                                     <img data-src="{{ asset('images/cards/drrm/card-border.png') }}" alt="Raised Image" class="swiper-lazy img-fluid rounded">
                                                     <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
                                                 </a>
@@ -159,8 +228,10 @@
                                     <div class="swiper-slide">
                                         <div class="row">
                                             <div class="col-md-12 text-center">
-                                                <img data-src="{{ asset('images/cards/msme/card-border.png') }}" alt="Raised Image" class="swiper-lazy img-fluid rounded">
-                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <a href="{{ route('msme.index') }}">
+                                                    <img data-src="{{ asset('images/cards/msme/card-border.png') }}" alt="Raised Image" class="swiper-lazy img-fluid rounded">
+                                                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -168,8 +239,10 @@
                                     <div class="swiper-slide">
                                         <div class="row">
                                             <div class="col-md-12 text-center">
-                                                <img data-src="{{ asset('images/cards/health/card-border.png') }}" alt="Raised Image" class="swiper-lazy img-fluid rounded">
-                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <a href="{{ route('health.index') }}">
+                                                    <img data-src="{{ asset('images/cards/health/card-border.png') }}" alt="Raised Image" class="swiper-lazy img-fluid rounded">
+                                                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -177,8 +250,10 @@
                                     <div class="swiper-slide">
                                         <div class="row">
                                             <div class="col-md-12 text-center">
-                                                <img data-src="{{ asset('images/cards/academe/card-border.png') }}" alt="Raised Image" class="swiper-lazy img-fluid rounded">
-                                                <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                <a href="{{ route('academe.index') }}">
+                                                    <img data-src="{{ asset('images/cards/academe/card-border.png') }}" alt="Raised Image" class="swiper-lazy img-fluid rounded">
+                                                    <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -222,9 +297,43 @@
 
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="{{ asset('assets/js/material-kit.js?v=2.0.5') }}" type="text/javascript"></script>
+    <script src="{{ asset('node_modules/mediaelement/mediaelement-and-player.min.js') }}"></script>
+    <script src="{{ asset('node_modules/mediaelement/plugins/dist/playlist/playlist.js') }}"></script>
 
     <!-- Initialize Swiper -->
     <script>
+        $(document).ready(function()
+        {
+            // $('#element').toast('show');
+
+            setInterval('updateClock()', 1000);
+            setInterval('updateDate()', 1000);
+        });
+    </script>
+        
+    <script>
+        var mediaElements = $('video');
+        for (var i = 0, total = mediaElements.length; i < total; i++) {
+            new MediaElementPlayer(mediaElements[i], {
+                features: ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'volume', 'playlist', 'loop', 'fullscreen']
+            });
+        }
+
+        // MODAL PLAYER EVENT
+        var modalPlayer = document.getElementById("player2"); 
+
+        // play video on modal open event
+        $('#myModal').on('shown.bs.modal', function (e) {
+            modalPlayer.currentTime = 0;
+            modalPlayer.play();
+        });
+
+        // pause video on modal close event
+        $('#myModal').on('hidden.bs.modal', function (e) {
+            modalPlayer.pause();
+        });
+
+
         var swiperBack1 = new Swiper('.header-swiper-back-1', {
             slidesPerView: 'auto',
             centeredSlides: true,
@@ -236,11 +345,7 @@
                 slideShadows: false,
             },
             watchSlidesVisibility: true,
-            // Enable lazy loading
             lazy: true
-            // coverflowEffect: {
-            //     slideShadows: false
-            // }
         });
 
         var swiperFront = new Swiper('.header-swiper-front', {
@@ -257,17 +362,6 @@
                 delay: 5000,
                 disableOnInteraction: false,
             },
-            // coverflowEffect: {
-            //    slideShadows: false,
-            // },
-            // pagination: {
-            //     el: '.header-swiper-front .swiper-pagination',
-            //     clickable: true,
-            // },
-            // navigation: {
-            //     nextEl: '.header-swiper-front .swiper-button-next',
-            //     prevEl: '.header-swiper-front .swiper-button-prev',
-            // },
             controller: {
                 control: [swiperBack1],
                 by: 'container',
@@ -276,7 +370,6 @@
             a11y: true,
             grabCursor: true,
             watchSlidesVisibility: true,
-            // Enable lazy loading
             lazy: true
         });
 
@@ -284,27 +377,5 @@
             .mouseenter(function() { swiperFront.autoplay.stop(); })
             .mouseleave(function() { swiperFront.autoplay.start(); });
     </script>
-    <script>
-        function updateClock()
-        {
-            var currentTimeString = moment().format('LTS');
-
-            $(".timer").html(currentTimeString);
-        }
-
-        function updateDate()
-        {
-            var currentTimeString = moment().format('dddd, MMM D, YYYY');
-
-            $(".timer-date").html(currentTimeString);
-        }
-
-        $(document).ready(function()
-        {
-            setInterval('updateClock()', 1000);
-            setInterval('updateDate()', 1000);
-        });
-    </script>
-
 </body>
 </html>

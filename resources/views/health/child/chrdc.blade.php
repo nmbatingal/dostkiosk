@@ -47,15 +47,11 @@
         <div class="container-fluid pt-5">
             <div class="row">
                 <div class="col-md-3 ml-auto">
-                    <h1 class="page-header-title title">Philippine Atmospheric, Geophysical and Astronomical Services Administration</h1>
-                    <h3 class="page-header-title title">PAGASA</h3>
+                    <h1 class="page-header-title title">Caraga Health Research and Development Consortium</h1>
+                    <h3 class="page-header-title title">CHRDC</h3>
                     <img
                         class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/DOST ASTI Website QR Code.png') }}" 
-                        width="120" >
-                    <img
-                        class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/PHL Microsat Program Website QR Code.png') }}" 
+                        src="{{ asset('storage/gallery/health/chrdc/CHRDC QR Code.png') }}" 
                         width="120" >
                 </div>
                 <div class="col-md-8 mr-auto ">
@@ -67,10 +63,10 @@
                                        controls 
                                        preload="auto"
                                        data-cast-title="#DOST"
-                                       poster="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
-                                       style="width: 100%;">
+                                       poster="{{ asset('storage/gallery/health/chrdc/video/Knowledge vs. Schistosomiasis CSU Dr. Jumawan research output.png') }}"
+                                       style="height: 100%;">
 
-                                    <source src="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
+                                    <source src="{{ asset('storage/gallery/health/chrdc/video/Knowledge vs. Schistosomiasis CSU Dr. Jumawan research output.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/health/chrdc/video/Knowledge vs. Schistosomiasis CSU Dr. Jumawan research output.png') }}"
                                             title="#DOST" data-playlist-description="" type="video/mp4">
                                 </video>
                             </div>
@@ -87,9 +83,9 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center p-0" style="margin-top: -50px;">
-                        <div class="alert alert-warning">
+                        <div class="alert alert-success">
                             <div class="container">
-                                <h2 class="title text-white">Department of Science and Technology-Advance Science and Technology Institute</h2>
+                                <h2 class="title text-white">Caraga Health Research and Development Consortium</h2>
                             </div>
                         </div>
                     </div>
@@ -127,20 +123,22 @@
                             <div class="tab-pane active show" id="info-2">
                                 <div class="row">
                                     <div class="col-md-9 ml-auto mr-auto">
-                                        <h3 class="title">About ASTI</h3>
+                                        <h3 class="title">About CHRDC</h3>
 
-                                        <img class="pl-3" src="{{ asset('storage/gallery/drrm/asti/ASTI-Advanced Science and Technology Institute logo.png') }}" width="150" >
+                                        <img class="pl-3" src="{{ asset('storage/gallery/health/chrdc/CHRDC Logo.png') }}" width="250" >
 
-                                        <h3>The Advanced Science and Technology Institute (DOST-ASTI) leads the government’s research and development initiatives in information, communications and technology (ICT), and microelectronics. They are tasked to lead the PHL-MICROSAT Program: Development of Philippine Scientific Earth Observation Microsatellite. Heard of the launch of the first PH cube satellite, MAYA-1? How about the DIWATA-2 Microsatellite? Browse ASTI materials here or visit their booth for the replicas of the satellites. Yet. ASTI brought with them the replicas of MAYA-1 and DIWATA-2! Isn’t that amazing?</h3>
+                                        <h3>The promotion and utilization of research outputs became the mantra of Caraga Health Research and Development Consortium (CHRDC)—the regional research consortium dedicated to improve the health conditions of Caraganons through health research and development—after conducting series of activities aimed at disseminating research outputs to communities in 2017.</h3>
 
-                                        <br>
+                                        <h3>On its 9th year, CHRDC’s journey on achieving a dynamic health research community in Caraga has taken greater strides through its closer collaboration with stakeholders, strengthened mentorship for researchers, and heightened dissemination of research outputs through educational campaigns.</h3>
 
-                                        <iframe src="https://asti.dost.gov.ph#pg-22-2" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3>The year has paved way for the expansion of health research areas, following the National Unified Health Research Agenda and the Regional Unified Health Research Agenda. Recognizing selected scientifically-proven health practices of ethnic tribes and minority groups, CHRDC opened its research on Traditional Knowledge (TK) on Health of Indigenous Peoples.</h3>
 
-                                        <br>
+                                        <h3>In 2017, a total of six TK health researches from various state universities and colleges were approved for funding. The researches will cover the documentation on the TK on health practices of tribes and cultural groups in Caraga like the Higaonon, Kamayo, Manobo, Surigaonon and Butuanon. Prior to the approval, CHRDC, together with the Philippine Council for Health Research and Development, organized a research proposal development workshop where the researchers were guided by Dr. Isidro Sia—professor from the University of the Philippines—on framing research questions and drafting research proposals.</h3>
 
-                                        <h3 class="title">PHL Microsat</h3>
-                                        <iframe src="http://phl-microsat.upd.edu.ph/about" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3>The consortium conducted its first Health Education Awareness Forum on disseminating the important research findings on Schistosomiasis. The activity aimed at raising awareness on Schistosomiasis among target participants residing near the Lake Mainit.</h3>
+
+                                        <h3>During the activity, Dr. Joycelyn Jumawan presented her study entitled, “A Gastropod Survey Geographic Distribution of Snail Vectors of Schistosomiasis in Lake Mainit, Philippines” where she disclosed that snail vectors of Schistosomiasis—Ampullaria luzonica, Radix Rubiginosa, Thiara Scabra—are not carriers of Schistosomiasis and are mostly found in rice fields, creeks and canals, with higher infection rate observed in the rice fields. She added that the three snail species to be the only vectors of Schistosomiasis in Lake Mainit are the Apple Snail (Ampullaria luzonica), Ear snails (Radix rubiginosa), and Pagoda Tiara (Thiara scabra).</h3>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +212,7 @@
             </div>
         </div>
 
-        @include('drrm.drrm-cards')
+        @include('health.health-cards')
     </div>
 @endsection
 

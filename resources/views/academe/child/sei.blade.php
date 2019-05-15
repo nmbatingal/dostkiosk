@@ -47,15 +47,15 @@
         <div class="container-fluid pt-5">
             <div class="row">
                 <div class="col-md-3 ml-auto">
-                    <h1 class="page-header-title title">Philippine Atmospheric, Geophysical and Astronomical Services Administration</h1>
-                    <h3 class="page-header-title title">PAGASA</h3>
+                    <h1 class="page-header-title title">Department of Science and Technology-Science Education Institute</h1>
+                    <h3 class="page-header-title title">DOST-SEI</h3>
                     <img
                         class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/DOST ASTI Website QR Code.png') }}" 
+                        src="{{ asset('storage/gallery/academe/sei/DOST Science Education Institute QR code.png') }}" 
                         width="120" >
                     <img
                         class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/PHL Microsat Program Website QR Code.png') }}" 
+                        src="{{ asset('storage/gallery/academe/sei/DOST SEI QR Code.png') }}" 
                         width="120" >
                 </div>
                 <div class="col-md-8 mr-auto ">
@@ -67,10 +67,10 @@
                                        controls 
                                        preload="auto"
                                        data-cast-title="#DOST"
-                                       poster="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
-                                       style="width: 100%;">
+                                       poster="{{ asset('storage/gallery/academe/sei/video/DOSTv Episode 454 - Sinesiyensya, Buhay Scholar.png') }}"
+                                       style="height: 100%;">
 
-                                    <source src="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
+                                    <source src="{{ asset('storage/gallery/academe/sei/video/DOSTv Episode 454 - Sinesiyensya, Buhay Scholar.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/academe/sei/video/DOSTv Episode 454 - Sinesiyensya, Buhay Scholar.png') }}"
                                             title="#DOST" data-playlist-description="" type="video/mp4">
                                 </video>
                             </div>
@@ -87,9 +87,9 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center p-0" style="margin-top: -50px;">
-                        <div class="alert alert-warning">
+                        <div class="alert alert-info">
                             <div class="container">
-                                <h2 class="title text-white">Department of Science and Technology-Advance Science and Technology Institute</h2>
+                                <h2 class="title text-white">Department of Science and Technology-Science Education Institute</h2>
                             </div>
                         </div>
                     </div>
@@ -127,20 +127,85 @@
                             <div class="tab-pane active show" id="info-2">
                                 <div class="row">
                                     <div class="col-md-9 ml-auto mr-auto">
-                                        <h3 class="title">About ASTI</h3>
+                                        <h3 class="title">About DOST-SEI</h3>
 
-                                        <img class="pl-3" src="{{ asset('storage/gallery/drrm/asti/ASTI-Advanced Science and Technology Institute logo.png') }}" width="150" >
+                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/sei/sei logo.png') }}" width="250" >
 
-                                        <h3>The Advanced Science and Technology Institute (DOST-ASTI) leads the government’s research and development initiatives in information, communications and technology (ICT), and microelectronics. They are tasked to lead the PHL-MICROSAT Program: Development of Philippine Scientific Earth Observation Microsatellite. Heard of the launch of the first PH cube satellite, MAYA-1? How about the DIWATA-2 Microsatellite? Browse ASTI materials here or visit their booth for the replicas of the satellites. Yet. ASTI brought with them the replicas of MAYA-1 and DIWATA-2! Isn’t that amazing?</h3>
+                                        <h3>The <b>S&T Undergraduate Scholarships Program</b> aims to stimulate and entice talented Filipino youths to pursue lifetime productive careers in science and technology and ensure a steady, adequate supply of qualified S&T human resources which can steer the country towards national progress. Check here the priority S&T programs and study placements, qualifications, requirements, and benefits.</h3>
+
+
+                                        <div class="row">
+                                            <div class="col-md-2">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/sei/qrcodes/2018 Junior Level Science Scholarship Application Form QR.png') }}" width="100%" >
+                                                    </div>
+                                                    <div class="card-footer text-center">
+                                                        2018 Junior Level Science Scholarship Application Form QR
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/sei/qrcodes/JLSS Primer-Reviewer.png') }}" width="100%" >
+                                                    </div>
+                                                    <div class="card-footer text-center">
+                                                        JLSS Primer-Reviewer
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/sei/qrcodes/2019 Undergrad Scholarship Application Form QR.png') }}" width="100%" >
+                                                    </div>
+                                                    <div class="card-footer text-center">
+                                                        2019 Undergrad Scholarship Application Form QR
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/sei/qrcodes/Undergrad Primer.png') }}" width="100%" >
+                                                    </div>
+                                                    <div class="card-footer text-center">
+                                                        Undergrad Primer
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/sei/qrcodes/2018 CBPSME Application Form QR.png') }}" width="100%" >
+                                                    </div>
+                                                    <div class="card-footer text-center">
+                                                        2018 CBPSME Application Form QR
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-2">
+                                                <div class="card">
+                                                    <div class="card-body">
+                                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/sei/qrcodes/Foreign Graduate Scholarship QR Code.png') }}" width="100%" >
+                                                    </div>
+                                                    <div class="card-footer text-center">
+                                                        Foreign Graduate Scholarship QR Code
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <h3>The <b>Junior Level Science Scholarship (JLSS)</b> Program aims to: provide scholarships that will finance the education of talented and deserving students in their third year of college and who are pursuing degree programs in the areas of science and technology; and ensure a steady, adequate supply of qualified S&T human resources who can steer the country towards national progress. Learn here the priority S&T programs and study placements, qualifications, requirements, and benefits.</h3>
+
+                                        <h3>The <b>Accelerated Science and Technology Human Resource Development Program (ASTHRDP)</b> of the National Science Consortium and the <b>Capability Building Program in Science and Mathematics Education (CBPSME)</b> provide scholarships for Master’s and Doctorate degrees in priority S&T areas. This aims to help improve the country’s global competitiveness and capability to innovate through Science and Technology, and accelerate the production of high-level human resources needed for Research and Development in S&T. Check out here the requirements, criteria of eligibility and the privileges. You might be our next National Scientist!</h3>
 
                                         <br>
 
-                                        <iframe src="https://asti.dost.gov.ph#pg-22-2" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
-
-                                        <br>
-
-                                        <h3 class="title">PHL Microsat</h3>
-                                        <iframe src="http://phl-microsat.upd.edu.ph/about" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3 class="title">More on SEI</h3>
+                                        <iframe src="http://www.sei.dost.gov.ph/" id="target-div" frameborder="0" width="100%" height="680px"></iframe>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +279,7 @@
             </div>
         </div>
 
-        @include('drrm.drrm-cards')
+        @include('academe.academe-cards')
     </div>
 @endsection
 

@@ -47,16 +47,8 @@
         <div class="container-fluid pt-5">
             <div class="row">
                 <div class="col-md-3 ml-auto">
-                    <h1 class="page-header-title title">Philippine Atmospheric, Geophysical and Astronomical Services Administration</h1>
-                    <h3 class="page-header-title title">PAGASA</h3>
-                    <img
-                        class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/DOST ASTI Website QR Code.png') }}" 
-                        width="120" >
-                    <img
-                        class="pl-3"
-                        src="{{ asset('storage/gallery/drrm/asti/PHL Microsat Program Website QR Code.png') }}" 
-                        width="120" >
+                    <h1 class="page-header-title title">Science and Technology Academic Research-Based Openly-Operated Kiosks</h1>
+                    <h3 class="page-header-title title">STARBOOKS</h3>
                 </div>
                 <div class="col-md-8 mr-auto ">
                     <div class="row">
@@ -67,10 +59,10 @@
                                        controls 
                                        preload="auto"
                                        data-cast-title="#DOST"
-                                       poster="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
-                                       style="width: 100%;">
+                                       poster="{{ asset('storage/gallery/academe/starbooks/video/Starbooks AVP.png') }}"
+                                       style="height: 20%;">
 
-                                    <source src="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/drrm/asti/video/DOST-ASTI.png') }}"
+                                    <source src="{{ asset('storage/gallery/academe/starbooks/video/Starbooks AVP.mp4') }}" data-playlist-thumbnail="{{ asset('storage/gallery/academe/starbooks/video/Starbooks AVP.png') }}"
                                             title="#DOST" data-playlist-description="" type="video/mp4">
                                 </video>
                             </div>
@@ -87,9 +79,9 @@
 
                 <div class="row">
                     <div class="col-md-12 text-center p-0" style="margin-top: -50px;">
-                        <div class="alert alert-warning">
+                        <div class="alert alert-info">
                             <div class="container">
-                                <h2 class="title text-white">Department of Science and Technology-Advance Science and Technology Institute</h2>
+                                <h2 class="title text-white">Science and Technology Academic Research-Based Openly-Operated Kiosks</h2>
                             </div>
                         </div>
                     </div>
@@ -127,20 +119,16 @@
                             <div class="tab-pane active show" id="info-2">
                                 <div class="row">
                                     <div class="col-md-9 ml-auto mr-auto">
-                                        <h3 class="title">About ASTI</h3>
+                                        <h3 class="title">About STARBOOKS</h3>
 
-                                        <img class="pl-3" src="{{ asset('storage/gallery/drrm/asti/ASTI-Advanced Science and Technology Institute logo.png') }}" width="150" >
+                                        <img class="pl-3" src="{{ asset('storage/gallery/academe/starbooks/starbooks logo.png') }}" width="250" >
 
-                                        <h3>The Advanced Science and Technology Institute (DOST-ASTI) leads the government’s research and development initiatives in information, communications and technology (ICT), and microelectronics. They are tasked to lead the PHL-MICROSAT Program: Development of Philippine Scientific Earth Observation Microsatellite. Heard of the launch of the first PH cube satellite, MAYA-1? How about the DIWATA-2 Microsatellite? Browse ASTI materials here or visit their booth for the replicas of the satellites. Yet. ASTI brought with them the replicas of MAYA-1 and DIWATA-2! Isn’t that amazing?</h3>
+                                        <h3>The Science and Technology Advanced Research-based Openly Operated Kiosk or STARBOOKS contains hundreds and thousands of digitized S&T information resources contained in various formats. It is a form of digital library for Science, Technology and Innovation resources.</h3>
 
-                                        <br>
+                                        <h3>Primarily deployed in rural and remote areas, the STARBOOKS is a stand-alone information kiosk which can be accessed offline. At least 500,000 digitized journals, serial publications, reference materials, annual reports, theses and dissertations, technical and project reports can be accessed through the kiosk. It also contains videos from the Research and Development Institutes of DOST for aspiring entrepreneurs. Because of its wide variety of information materials, non-academic institutions have also availed the technology.</h3>
 
-                                        <iframe src="https://asti.dost.gov.ph#pg-22-2" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
-
-                                        <br>
-
-                                        <h3 class="title">PHL Microsat</h3>
-                                        <iframe src="http://phl-microsat.upd.edu.ph/about" id="target-div" frameborder="0" width="100%" height="980px"></iframe>
+                                        <h3>Learn here how to apply for your school or your organization.</h3>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -214,7 +202,7 @@
             </div>
         </div>
 
-        @include('drrm.drrm-cards')
+        @include('academe.academe-cards')
     </div>
 @endsection
 

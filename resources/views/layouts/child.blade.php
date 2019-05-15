@@ -23,7 +23,6 @@
     <link rel="stylesheet" href="{{ asset('node_modules/mediaelement/mediaelementplayer.min.css') }}">
     <link rel="stylesheet" href="{{ asset('node_modules/mediaelement/plugins/dist/playlist/playlist.css') }}">
     <link rel="stylesheet" href="{{ asset('node_modules/lightgallery/dist/css/lightgallery.css') }}">
-    <link href="http://vjs.zencdn.net/4.12/video-js.css" rel="stylesheet">
 
     <style type="text/css">
 
@@ -106,7 +105,6 @@
 
     <!-- Sticky Kit -->
     <script src="{{ asset('node_modules/sticky-kit-master/dist/sticky-kit.min.js') }}" type="text/javascript"></script>
-
     <!-- Lightgallery JS -->
     <script src="{{ asset('node_modules/lightgallery/dist/js/lightgallery.min.js') }}" type="text/javascript"></script>
     <!-- Lightgallery JS Plugins -->
@@ -114,12 +112,16 @@
     <script src="{{ asset('node_modules/lightgallery/modules/lg-fullscreen.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('node_modules/lightgallery/modules/lg-video.min.js') }}" type="text/javascript"></script>
     <script src="{{ asset('node_modules/lightgallery/modules/lg-zoom.min.js') }}" type="text/javascript"></script>
-    <script src="http://vjs.zencdn.net/4.12/video.js"></script>
 
     @stack('scripts')
 
     <script>
-        $('#video-player').mediaelementplayer();
+        var mediaElements = $('video');
+        for (var i = 0, total = mediaElements.length; i < total; i++) {
+            new MediaElementPlayer(mediaElements[i], {
+                features: ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'volume', 'playlist', 'loop', 'fullscreen']
+            });
+        }
     </script>
 </body>
 </html>
