@@ -148,6 +148,7 @@
                                         preload="auto"
                                         data-cast-title="DOST-ASTI"
                                         poster="{{ asset('storage/videos/dost-intro-2018.png') }}"
+                                        loop
                                         style="width: 100%;">
 
                                         <source 
