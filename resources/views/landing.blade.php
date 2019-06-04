@@ -118,6 +118,10 @@
         .modal-xl {
             max-width: 1330px;
         }
+
+        .modal .modal-dialog {
+            margin-top: 50px;
+        }
     </style>
 </head>
 <body class="index-page sidebar-collapse">
@@ -318,7 +322,7 @@
             setInterval('updateDate()', 1000);
 
             $(document).bind("contextmenu",function(e){
-                return false;
+                // return false;
             }); 
         });
     </script>
