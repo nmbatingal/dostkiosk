@@ -131,8 +131,13 @@
         }
 
         // MODAL PLAYER EVENT
-        var modalPlayer = document.getElementById("video-player");
+        var modalPlayer  = document.getElementById("video-player");
+        var videoGallery = document.getElementById("video-gallery");
+
+        $('#video-gallery').on('click', function (e) {
             modalPlayer.pause();
+        });
+            
     </script>
 </body>
 </html>
