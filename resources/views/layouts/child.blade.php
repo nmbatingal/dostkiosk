@@ -123,12 +123,16 @@
         });
     </script>
     <script>
-        var mediaElements = $('video');
+        var mediaElements = $('video#video-player');
         for (var i = 0, total = mediaElements.length; i < total; i++) {
             new MediaElementPlayer(mediaElements[i], {
                 features: ['prevtrack', 'playpause', 'nexttrack', 'current', 'progress', 'duration', 'volume', 'playlist', 'loop', 'fullscreen']
             });
         }
+
+        // MODAL PLAYER EVENT
+        var modalPlayer = document.getElementById("video-player");
+            modalPlayer.pause();
     </script>
 </body>
 </html>
