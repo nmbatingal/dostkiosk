@@ -95,7 +95,14 @@
 
     <!-- Control Center for Material Kit: parallax effects, scripts for the example pages etc -->
     <script src="{{ asset('assets/js/material-kit.js?v=2.0.5') }}" type="text/javascript"></script>
-
+    <script>
+        $(document).ready(function()
+        {
+            $(document).bind("contextmenu",function(e){
+                return false;
+            }); 
+        });
+    </script>
     @stack('scripts')
 </body>
 </html>

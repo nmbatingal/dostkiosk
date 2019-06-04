@@ -39,6 +39,14 @@
 
     <style type="text/css">
 
+        body {
+            /*** DISABLE TEXT SELECT ***/
+            -webkit-user-select: none;
+            -moz-user-select: -moz-none;
+            -ms-user-select: none;
+            user-select: none;
+        }
+
         .header-swipers {
             width:100%;
             height:100%;
@@ -118,7 +126,7 @@
         <div class="section p-2">
             <div class="col text-right ml-auto">
                 <button class="btn btn-danger btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-play"></i> Watch Video</button>
-                <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Customer Survey</button>
+                <!-- <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Customer Survey</button> -->
             </div>
         </div>
 
@@ -161,7 +169,7 @@
         </div>
         <!--  End Modal -->
 
-        <div class="section">
+        <div class="section pt-2">
             <div class="header-swipers">
                 <div class="container-fluid">
                     <div class="row">
@@ -308,6 +316,10 @@
 
             setInterval('updateClock()', 1000);
             setInterval('updateDate()', 1000);
+
+            $(document).bind("contextmenu",function(e){
+                return false;
+            }); 
         });
     </script>
         

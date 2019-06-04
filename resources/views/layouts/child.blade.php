@@ -114,7 +114,14 @@
     <script src="{{ asset('node_modules/lightgallery/modules/lg-zoom.min.js') }}" type="text/javascript"></script>
 
     @stack('scripts')
-
+    <script>
+        $(document).ready(function()
+        {
+            $(document).bind("contextmenu",function(e){
+                return false;
+            }); 
+        });
+    </script>
     <script>
         var mediaElements = $('video');
         for (var i = 0, total = mediaElements.length; i < total; i++) {
