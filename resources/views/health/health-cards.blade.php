@@ -1,4 +1,4 @@
-<div class="section section-tabs text-center p-0">
+<div id="more-sti" class="section section-tabs text-center p-0">
     <div class="container-fluid">
         <div class="row">
             <div class="col-md-8 ml-auto mr-auto">
