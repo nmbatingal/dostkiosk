@@ -125,11 +125,17 @@
                     <a href="#" class="btn btn-danger btn-lg">
                         <i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp; Citizen's Charter
                     </a>
+                    <span style="display:none;">
+                        @forelse ( $photos as $photo )
+                            <img src="{{ asset($photo ) }}">
+                        @empty
+                        @endforelse
+                    </span>
                 </span>
             </div>
             <div class="col text-right ml-auto">
                 <span id="lightgallery1">
-                    <a href="#" class="btn btn-success btn-lg">
+                    <a href="{{ asset('images/directory/org_chart.jpg') }}" class="btn btn-success btn-lg">
                         <i class="fa fa-sitemap"></i>&nbsp;&nbsp;&nbsp; Regional Directory
                     </a>
                 </span>

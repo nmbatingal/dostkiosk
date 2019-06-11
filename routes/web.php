@@ -271,7 +271,8 @@ Route::get('/welcome', function () {
 Auth::routes();
 
 Route::get('/', function () {
-    return view('landing');
+	$photos = Storage::disk('public')->allFiles('images/charter');
+    return view('landing', compact('photos'));
 })->name('index');
 
 // SUBMAIN ROUTE //
