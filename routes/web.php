@@ -271,8 +271,10 @@ Route::get('/welcome', function () {
 Auth::routes();
 
 Route::get('/', function () {
-	$photos = Storage::disk('public')->allFiles('images/charter');
+	$photos = Storage::disk('public')->allFiles('gallery/charter');
+	// $photos = Storage::disk('public')->allFiles('gallery/academe/starbooks/images');
     return view('landing', compact('photos'));
+    //return dd($photos);
 })->name('index');
 
 // SUBMAIN ROUTE //

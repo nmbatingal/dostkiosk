@@ -125,12 +125,12 @@
                     <a href="#" class="btn btn-danger btn-lg">
                         <i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp; Citizen's Charter
                     </a>
-                    <span style="display:none;">
-                        @forelse ( $photos as $photo )
-                            <img src="{{ asset($photo ) }}">
-                        @empty
-                        @endforelse
-                    </span>
+                    @forelse ( $photos as $photo )
+                        <a href="{{ asset('storage/'.$photo ) }}" style="display: none;">
+                            <img src="{{ asset('storage/'.$photo ) }}" class="p-1 img-fluid rounded">
+                        </a>
+                    @empty
+                    @endforelse
                 </span>
             </div>
             <div class="col text-right ml-auto">
