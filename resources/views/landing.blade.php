@@ -53,7 +53,7 @@
         }
 
         .swiper-slide {
-            opacity: .25;
+            /*opacity: .25;*/
             transition: opacity .25s ease-in-out;
            -moz-transition: opacity .25s ease-in-out;
            -webkit-transition: opacity .25s ease-in-out;
@@ -121,9 +121,17 @@
 
         <div class="row m-0 p-2">
             <div class="col mr-auto">
+                
+            </div>
+            <div class="col text-right ml-auto">
+                <span id="lightgallery1">
+                    <a href="{{ asset('images/directory/org_chart.jpg') }}" class="btn btn-success btn-lg">
+                        <i class="fa fa-sitemap"></i>&nbsp;&nbsp;&nbsp; Regional Office Directory
+                    </a>
+                </span>
                 <span id="lightgallery3">
                     <a href="#" class="btn btn-danger btn-lg">
-                        <i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp; Citizen's Charter
+                        <i class="fa fa-list"></i>&nbsp;&nbsp;&nbsp; DOST Citizen's Charter
                     </a>
                     @forelse ( $photos as $photo )
                         <a href="{{ asset('storage/'.$photo ) }}" style="display: none;">
@@ -132,18 +140,11 @@
                     @empty
                     @endforelse
                 </span>
-            </div>
-            <div class="col text-right ml-auto">
-                <span id="lightgallery1">
-                    <a href="{{ asset('images/directory/org_chart.jpg') }}" class="btn btn-success btn-lg">
-                        <i class="fa fa-sitemap"></i>&nbsp;&nbsp;&nbsp; Regional Directory
-                    </a>
-                </span>
-                <span id="lightgallery2">
+                <!-- <span id="lightgallery2">
                     <a href="{{ asset('images/directory/adn.jpg') }}" class="btn btn-info btn-lg">
                         <i class="fa fa-users"></i>&nbsp;&nbsp;&nbsp; ADN Provincial Center
                     </a>
-                </span>
+                </span> -->
                 <!-- <button class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal"><i class="fa fa-pencil"></i> Customer Survey</button> -->
 
             </div>
@@ -169,9 +170,44 @@
                         type="video/mp4">
 
                     <source 
-                        src="{{ asset('storage/videos/dost-intro-2018.mp4') }}" 
-                        data-playlist-thumbnail="{{ asset('storage/videos/dost-intro-2018.png') }}"
-                        title="DOST-ASTI"
+                        src="{{ asset('storage/videos/e-Governance Systems - CSPC.mp4') }}" 
+                        data-playlist-thumbnail="{{ asset('storage/videos/e-Governance Systems - CSPC.png') }}"
+                        title="e-Governance Systems - CSPC"
+                        data-playlist-description="" 
+                        type="video/mp4">
+
+                    <source 
+                        src="{{ asset('storage/videos/Caraga RSTL.mp4') }}" 
+                        data-playlist-thumbnail="{{ asset('storage/videos/Caraga RSTL.png') }}"
+                        title="Caraga RSTL"
+                        data-playlist-description="" 
+                        type="video/mp4">
+
+                    <source 
+                        src="{{ asset('storage/videos/DOST PCIEERD Animated Video.mp4') }}" 
+                        data-playlist-thumbnail="{{ asset('storage/videos/DOST PCIEERD Animated Video.png') }}"
+                        title="DOST PCIEERD Animated Video"
+                        data-playlist-description="" 
+                        type="video/mp4">
+
+                    <source 
+                        src="{{ asset('storage/videos/DOST PCIEERD Institutional Video 2017.mp4') }}" 
+                        data-playlist-thumbnail="{{ asset('storage/videos/DOST PCIEERD Institutional Video 2017.png') }}"
+                        title="DOST PCIEERD Institutional Video 2017"
+                        data-playlist-description="" 
+                        type="video/mp4">
+
+                    <source 
+                        src="{{ asset('storage/videos/Jabonga_Bag_Making_CEST.mp4') }}" 
+                        data-playlist-thumbnail="{{ asset('storage/videos/Jabonga_Bag_Making_CEST.png') }}"
+                        title="Jabonga_Bag_Making_CEST"
+                        data-playlist-description="" 
+                        type="video/mp4">
+
+                    <source 
+                        src="{{ asset('storage/videos/PAGASA Institutional Video (2018).mp4') }}" 
+                        data-playlist-thumbnail="{{ asset('storage/videos/PAGASA Institutional Video (2018).png') }}"
+                        title="PAGASA Institutional Video (2018)"
                         data-playlist-description="" 
                         type="video/mp4">
                 </video>
